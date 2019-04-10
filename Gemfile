@@ -13,7 +13,8 @@ gem 'uglifier'
 gem "bootsnap", ">= 1.1.0", require: false
 
 gem 'opal'
-gem 'opal-ferro', '~> 0.10.2'
+gem 'opal-ferro', '~> 0.11.0'
+# gem 'opal-ferro', path: '../opal-ferro'
 
 # Opal-rails is needed for sprockets. It includes
 # opal-jquery but jquery is not loaded in application.js
@@ -24,8 +25,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console'
+  gem 'listen'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
